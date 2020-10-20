@@ -1,0 +1,17 @@
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+$theme-colors:(
+  'primary': #D29DC7,
+  
+);
+
+@import 'fonts';
+@import 'header';
+
+@import '../node_modules/bootstrap/scss/bootstrap.scss';
+

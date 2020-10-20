@@ -1,0 +1,23 @@
+{
+  "name": "saloon-template.github.io",
+  "version": "1.0.0",
+  "description": "Saloon Website Template",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/squidiw/saloon-template.github.io.git"
+  },
+  "author": "Koranteng Anane",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/squidiw/saloon-template.github.io/issues"
+  },
+  "homepage": "https://github.com/squidiw/saloon-template.github.io#readme",
+  "dependencies": {
+    "bootstrap": "^4.5.2",
+    "popper.js": "^1.12.3"
+  }
+}

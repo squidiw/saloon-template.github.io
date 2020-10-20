@@ -1,0 +1,25 @@
+@font-face{
+    font-family: 'Lato-Bold';
+    src: url(../fonts/Lora/Lora-Bold.ttf);
+}
+
+@font-face{
+    font-family: 'Lato-Regular';
+    src: url(../fonts/Lora/Lora-Regular.ttf);
+}
+
+@font-face{
+    font-family: 'Roboto-Regular';
+    src: url(../fonts/Roboto/Roboto-Regular.ttf);
+}
+
+@font-face{
+    font-family: 'Roboto-Bold';
+    src: url(../fonts/Roboto/Roboto-Bold.ttf);
+}
+
+$header-r: 'Lato-Regular';
+$header-b: 'Lato-Bold';
+
+$text-r: 'Roboto-Regular';
+$text-b: 'Roboto-Bold';
