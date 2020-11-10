@@ -5,23 +5,23 @@
 }
 
 @font-face {
-  font-family: 'Lato-Bold';
-  src: url(../fonts/Lora/Lora-Bold.ttf);
+  font-family: 'JosefinSlab-Bold';
+  src: url(../fonts/josefinslab/JosefinSlab-Bold.ttf);
 }
 
 @font-face {
-  font-family: 'Lato-Regular';
-  src: url(../fonts/Lora/Lora-Regular.ttf);
+  font-family: 'JosefinSlab-Regular';
+  src: url(../fonts/josefinslab/JosefinSlab-Regular.ttf);
 }
 
 @font-face {
-  font-family: 'Roboto-Regular';
-  src: url(../fonts/Roboto/Roboto-Regular.ttf);
+  font-family: 'JosefinSans-Regular';
+  src: url(../fonts/josefinsans/JosefinSans-Regular.ttf);
 }
 
 @font-face {
-  font-family: 'Roboto-Bold';
-  src: url(../fonts/Roboto/Roboto-Bold.ttf);
+  font-family: 'JosefinSans-Bold';
+  src: url(../fonts/josefinsans/JosefinSans-Bold.ttf);
 }
 
 header {
@@ -37,11 +37,12 @@ header .header-text-container {
 
 header .header-text-container .header-text {
   text-transform: capitalize;
-  font-family: "Lato-Bold";
+  font-family: "JosefinSlab-Bold";
   color: white;
 }
 
 header .header-text-container .header-text h1 {
+  font-family: "JosefinSans-Bold";
   font-size: 2.5rem;
 }
 
@@ -52,16 +53,16 @@ header .header-text-container .header-text h1::after {
   position: absolute;
   width: 65px;
   height: 2px;
-  background-color: #D29DC7;
+  background-color: #d29dc7;
 }
 
 header .header-text-container .header-text h2 {
-  font-size: 3.5rem;
+  font-size: 4rem;
 }
 
 header .header-text-container .header-text .btn {
-  font-family: "Lato-Bold";
-  font-size: 1.5rem;
+  font-family: "JosefinSans-Bold";
+  font-size: 1.8rem;
   color: white;
   width: 200px;
   border-radius: 20px 20px 20px 20px;
@@ -69,7 +70,7 @@ header .header-text-container .header-text .btn {
 
 header .header-text-container .header-text a:hover {
   background-color: white;
-  color: #D29DC7;
+  color: #d29dc7;
 }
 
 .quick-info-container {
@@ -86,25 +87,32 @@ header .header-text-container .header-text a:hover {
 
 .quick-info-container .block-quick-info .info-heading {
   font-size: 1.2rem;
-  font-family: "Roboto-Bold";
+  font-family: "JosefinSans-Bold";
+}
+
+.quick-info-container .block-quick-info .info-text {
+  font-family: "JosefinSans-Regular";
 }
 
 .services-top-text {
-  font-family: "Lato-Bold";
+  font-family: "JosefinSlab-Bold";
+}
+
+.services-top-text p {
+  font-family: "JosefinSans-Regular";
 }
 
 .services-top-text p::after {
   position: absolute;
-  content: '';
+  content: "";
   top: 125%;
   left: 48%;
   width: 50px;
   height: 2px;
-  background-color: #D29DC7;
+  background-color: #d29dc7;
 }
 
 .card {
-  font-family: "Roboto-Regular";
   border: none !important;
   border-radius: 50px;
 }
@@ -115,23 +123,28 @@ header .header-text-container .header-text a:hover {
   top: 5px;
   right: 5px;
   left: 5px;
-  bottom: 245px;
+  bottom: 265px;
   background: transparent;
-  border: 1px solid #D29DC7;
+  border: 1px solid #d29dc7;
   z-index: 1;
 }
 
-.card h5 {
+.card .card-body {
+  background-color: #f6f6f7;
+}
+
+.card .card-body h5 {
+  font-family: "JosefinSlab-Regular";
   font-size: 1.5rem;
   font-weight: bold;
 }
 
-.card .card-body {
-  background-color: #F6F6F7;
+.card .card-body p .card-title {
+  font-family: text-r;
 }
 
 .card .card-body .btn {
-  font-family: "Lato-Bold";
+  font-family: "JosefinSans-Bold";
   font-size: 0.9rem;
   color: white;
   width: 120px;
@@ -140,12 +153,12 @@ header .header-text-container .header-text a:hover {
 
 .card .card-body a:hover {
   background-color: white;
-  color: #D29DC7;
+  color: #d29dc7;
 }
 
 .about {
+  height: 80vh;
   margin-top: 10em;
-  font-family: "Roboto-Regular";
 }
 
 .about .about-img {
@@ -154,7 +167,7 @@ header .header-text-container .header-text a:hover {
 
 .about .about-img::before {
   position: absolute;
-  content: '';
+  content: "";
   top: -35px;
   right: 140px;
   bottom: 60px;
@@ -168,12 +181,16 @@ header .header-text-container .header-text a:hover {
 }
 
 .about .about-body .about-header h2 {
-  font-family: "Lato-Bold";
+  font-family: "JosefinSlab-Bold";
+}
+
+.about .about-body .about-text {
+  font-family: "JosefinSans-Regular";
 }
 
 .about .about-body .btn {
-  font-family: "Lato-Bold";
-  font-size: 0.9rem;
+  font-family: "JosefinSans-Bold";
+  font-size: 1.2rem;
   color: white;
   width: 120px;
   border-radius: 20px 20px 20px 20px;
@@ -181,12 +198,76 @@ header .header-text-container .header-text a:hover {
 
 .about .about-body a:hover {
   background-color: white;
-  color: #D29DC7;
+  color: #d29dc7;
+}
+
+.gallery-header {
+  font-family: "JosefinSlab-Bold";
+  text-transform: capitalize;
+  text-align: center;
+}
+
+.gallery-header h3 {
+  margin-bottom: 1em;
+}
+
+.gallery-header h3::after {
+  position: absolute;
+  content: "";
+  top: 322%;
+  left: 48%;
+  width: 70px;
+  height: 2px;
+  background-color: #d29dc7;
+}
+
+.gallery-container {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.gallery-container .gallery {
+  display: grid;
+  grid-template-columns: repeat(3, 30vw);
+  grid-template-rows: repeat(3, 1fr);
+  grid-gap: 10px;
+}
+
+.gallery-container .gallery h1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "JosefinSlab-Bold";
+  border-radius: 10px;
+}
+
+.gallery-container .gallery .deeppink {
+  color: #ffebff;
+  background-color: #9e6579;
+}
+
+.gallery-container .gallery .gold {
+  background-color: #eb9d00;
+}
+
+.gallery-container .gallery .green {
+  color: #ffebff;
+  background-color: #044d2b;
+}
+
+.gallery-container .gallery .gallery__img {
+  border-radius: 10px;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 .team {
+  height: 100vh;
   margin-top: 10em;
-  font-family: "Roboto-Regular";
+  font-family: "JosefinSans-Regular";
 }
 
 .team .team-img {
@@ -195,7 +276,7 @@ header .header-text-container .header-text a:hover {
 
 .team .team-img::before {
   position: absolute;
-  content: '';
+  content: "";
   top: -35px;
   right: 140px;
   bottom: 60px;
@@ -209,20 +290,117 @@ header .header-text-container .header-text a:hover {
 }
 
 .team .team-body .team-header h2 {
-  font-family: "Lato-Bold";
+  font-family: "JosefinSlab-Bold";
 }
 
-.team .team-body .btn {
-  font-family: "Lato-Bold";
-  font-size: 0.9rem;
+.team .team-body .team-text {
+  padding: 5px;
+}
+
+.testimonial__header {
+  font-family: "JosefinSlab-Bold";
+  text-transform: capitalize;
+}
+
+.testimonial__header::after {
+  content: "";
+  transform: translateX(-50%);
+  left: 50%;
+  bottom: -40%;
+  position: absolute;
+  width: 100px;
+  height: 1px;
+  background: #ea728c;
+}
+
+.testimony-container {
+  background-color: #efefef;
+}
+
+.owl-carousel .block-testimony {
+  padding: 30px;
+  border: 1px solid #e7e4e4;
+}
+
+.owl-carousel h2 {
+  font-family: "JosefinSlab-Bold";
+  font-size: 1.8rem;
+}
+
+.owl-carousel p {
+  font-family: "JosefinSans-Bold";
+  font-size: 1.2rem;
+  margin: 0 0 1rem;
+}
+
+.discount-container {
+  height: 70vh;
+  margin-top: 5em;
+  overflow: hidden;
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../imgs/discount-banner.jpg) center no-repeat fixed;
+  background-size: cover;
+}
+
+.discount-container h2 {
+  font-size: 3.5rem;
+  font-family: "JosefinSlab-Bold";
+}
+
+.discount-container p {
+  font-family: "JosefinSans-Regular";
+}
+
+.discount-container .btn {
+  padding: 8px;
+  font-family: "JosefinSans-Bold";
+  font-size: 1.5rem;
   color: white;
-  width: 120px;
+  width: 350px;
   border-radius: 20px 20px 20px 20px;
 }
 
-.team .team-body a:hover {
-  background-color: white;
-  color: #D29DC7;
+.discount-container .btn:hover {
+  border: 2px solid #d29dc7;
+  color: #d29dc7;
+  background-color: #fff;
+}
+
+.site-footer {
+  margin-top: 5em;
+  background-color: #F4F1DE;
+}
+
+.site-footer .footer-header {
+  font-family: "JosefinSlab-Bold";
+  text-transform: capitalize;
+}
+
+.site-footer .footer-menu li {
+  list-style-type: none;
+  text-transform: capitalize;
+}
+
+.site-footer .footer-menu li a {
+  font-weight: 500;
+  text-decoration-line: none;
+}
+
+.site-footer .footer-menu li a:hover {
+  color: #9e6579;
+  transition: all 1s ease;
+  text-decoration: none;
+}
+
+.site-footer .fab:hover {
+  transition: all 1s ease;
+  text-decoration: none;
+  color: #9e6579;
+}
+
+.site-footer .footer-bottom p {
+  font-family: "JosefinSlab-Bold";
+  text-transform: capitalize;
+  color: #d29dc7;
 }
 
 /*!

@@ -1,25 +1,25 @@
 @font-face{
-    font-family: 'Lato-Bold';
-    src: url(../fonts/Lora/Lora-Bold.ttf);
+    font-family: 'JosefinSlab-Bold';
+    src: url(../fonts/josefinslab/JosefinSlab-Bold.ttf);
 }
 
 @font-face{
-    font-family: 'Lato-Regular';
-    src: url(../fonts/Lora/Lora-Regular.ttf);
+    font-family: 'JosefinSlab-Regular';
+    src: url(../fonts/josefinslab/JosefinSlab-Regular.ttf);
 }
 
 @font-face{
-    font-family: 'Roboto-Regular';
-    src: url(../fonts/Roboto/Roboto-Regular.ttf);
+    font-family: 'JosefinSans-Regular';
+    src: url(../fonts/josefinsans/JosefinSans-Regular.ttf);
 }
 
 @font-face{
-    font-family: 'Roboto-Bold';
-    src: url(../fonts/Roboto/Roboto-Bold.ttf);
+    font-family: 'JosefinSans-Bold';
+    src: url(../fonts/josefinsans/JosefinSans-Bold.ttf);
 }
 
-$header-r: 'Lato-Regular';
-$header-b: 'Lato-Bold';
+$header-r: 'JosefinSlab-Regular';
+$header-b: 'JosefinSlab-Bold';
 
-$text-r: 'Roboto-Regular';
-$text-b: 'Roboto-Bold';
+$text-r: 'JosefinSans-Regular';
+$text-b: 'JosefinSans-Bold';

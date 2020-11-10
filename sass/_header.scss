@@ -1,213 +1,386 @@
-header{
-    height: 100vh;
-    overflow: hidden;
-    background:( linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../imgs/15.jpg))  center left no-repeat fixed;
+header {
+  height: 100vh;
+  overflow: hidden;
+  background: (
+      linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+      url(../imgs/15.jpg)
+    )
+    center left no-repeat fixed;
 
-    .header-text-container{
-        margin-top: 20vh;
-        padding: 0;
+  .header-text-container {
+    margin-top: 20vh;
+    padding: 0;
 
-        .header-text{
-            text-transform: capitalize;
-            font-family: $header-b;
-            color: white;
+    .header-text {
+      text-transform: capitalize;
+      font-family: $header-b;
+      color: white;
 
-            h1{
-                font-size: 2.5rem;
-                &::after{
-                    content: "";
-                    top: 18%;
-                    left:45%;
-                    position: absolute;
-                    width: 65px;
-                    height: 2px;
-                    background-color: #D29DC7;
-                }
-            }
-            
-            h2{
-    
-                font-size: 3.5rem;
-            }
-
-            .btn{
-                font-family: $header-b;
-                font-size: 1.5rem;
-                color: white;
-                width: 200px;
-                border-radius: 20px 20px 20px 20px;
-            }
-
-            a:hover{
-                background-color: white;
-                color: #D29DC7;
-            }
+      h1 {
+        font-family: $text-b;
+        font-size: 2.5rem;
+        &::after {
+          content: "";
+          top: 18%;
+          left: 45%;
+          position: absolute;
+          width: 65px;
+          height: 2px;
+          background-color: #d29dc7;
         }
+      }
+
+      h2 {
+        font-size: 4rem;
+      }
+
+      .btn {
+        font-family: $text-b;
+        font-size: 1.8rem;
+        color: white;
+        width: 200px;
+        border-radius: 20px 20px 20px 20px;
+      }
+
+      a:hover {
+        background-color: white;
+        color: #d29dc7;
+      }
     }
+  }
 }
 
-.quick-info-container{
-    background-color: white;
+.quick-info-container {
+  background-color: white;
+  z-index: 1000;
+  border-radius: 10px;
+  box-shadow: 0 15px 30px 0 rgba(0, 0, 0, 0.05);
+  .block-quick-info {
+    padding: 1em 0;
+    margin-top: -2.4em;
+
+    .info-heading {
+      font-size: 1.2rem;
+      font-family: $text-b;
+    }
+
+    .info-text {
+      font-family: $text-r;
+    }
+  }
+}
+
+.services-top-text {
+  font-family: $header-b;
+
+  p {
+    font-family: $text-r;
+    &::after {
+      position: absolute;
+      content: "";
+      top: 125%;
+      left: 48%;
+      width: 50px;
+      height: 2px;
+      background-color: #d29dc7;
+    }
+  }
+}
+
+.card {
+  border: none !important;
+  border-radius: 50px;
+
+  &::after {
+    position: absolute;
+    content: "";
+    top: 5px;
+    right: 5px;
+    left: 5px;
+    bottom: 265px;
+    background: transparent;
+    border: 1px solid #d29dc7;
+    z-index: 1;
+  }
+
+  .card-body {
+    background-color: #f6f6f7;
+
+    h5 {
+      font-family: $header-r;
+      font-size: 1.5rem;
+      font-weight: bold;
+    }
+
+    p .card-title {
+      font-family: text-r;
+    }
+
+    .btn {
+      font-family: $text-b;
+      font-size: 0.9rem;
+      color: white;
+      width: 120px;
+      border-radius: 20px 20px 20px 20px;
+    }
+
+    a:hover {
+      background-color: white;
+      color: #d29dc7;
+    }
+  }
+}
+
+.about {
+  height: 80vh;
+  margin-top: 10em;
+
+  .about-img {
     z-index: 1000;
-    border-radius: 10px;
-    box-shadow: 0 15px 30px 0 rgba(0, 0, 0, 0.05);
-    .block-quick-info{
-        padding: 1em 0;
-        margin-top: -2.4em;
 
-        .info-heading{
-            font-size: 1.2rem;
-            font-family: $text-b;
-        }
+    &::before {
+      position: absolute;
+      content: "";
+      top: -35px;
+      right: 140px;
+      bottom: 60px;
+      left: -20px;
+      background-color: #f5caec;
+      z-index: -1;
     }
+  }
+
+  .about-body {
+    margin-top: -5em;
+
+    .about-header {
+      h2 {
+        font-family: $header-b;
+      }
+    }
+
+    .about-text {
+      font-family: $text-r;
+    }
+
+    .btn {
+      font-family: $text-b;
+      font-size: 1.2rem;
+      color: white;
+      width: 120px;
+      border-radius: 20px 20px 20px 20px;
+    }
+
+    a:hover {
+      background-color: white;
+      color: #d29dc7;
+    }
+  }
 }
 
-.services-top-text{
+.gallery-header {
+  font-family: $header-b;
+  text-transform: capitalize;
+  text-align: center;
+
+  h3 {
+    margin-bottom: 1em;
+    &::after {
+      position: absolute;
+      content: "";
+      top: 322%;
+      left: 48%;
+      width: 70px;
+      height: 2px;
+      background-color: #d29dc7;
+    }
+  }
+}
+
+.gallery-container {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 30vw);
+    grid-template-rows: repeat(3, 1fr);
+    grid-gap: 10px;
+
+    h1 {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-family: $header-b;
+      border-radius: 10px;
+    }
+
+    .deeppink {
+      color: #ffebff;
+      background-color: #9e6579;
+    }
+
+    .gold {
+      background-color: #eb9d00;
+    }
+
+    .green {
+      color: #ffebff;
+      background-color: #044d2b;
+    }
+
+    .gallery__img {
+      border-radius: 10px;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+}
+
+.team {
+  height: 100vh;
+  margin-top: 10em;
+  font-family: $text-r;
+
+  .team-img {
+    z-index: 1000;
+
+    &::before {
+      position: absolute;
+      content: "";
+      top: -35px;
+      right: 140px;
+      bottom: 60px;
+      left: -20px;
+      background-color: #f5caec;
+      z-index: -1;
+    }
+  }
+
+  .team-body {
+    margin-top: -5em;
+
+    .team-header {
+      h2 {
+        font-family: $header-b;
+      }
+    }
+
+    .team-text {
+      padding: 5px;
+    }
+  }
+}
+
+.testimonial__header {
+  font-family: $header-b;
+  text-transform: capitalize;
+  &::after {
+    content: "";
+    transform: translateX(-50%);
+    left: 50%;
+    bottom: -40%;
+    position: absolute;
+    width: 100px;
+    height: 1px;
+    background: #ea728c;
+  }
+}
+
+.testimony-container {
+  background-color: #efefef;
+}
+.owl-carousel {
+  .block-testimony {
+    padding: 30px;
+    border: 1px solid #e7e4e4;
+  }
+
+  h2 {
     font-family: $header-b;
-
-    p{
-        &::after{
-            position: absolute;
-            content: '';
-            top: 125%;
-            left: 48%;
-            width: 50px;
-            height: 2px;
-            background-color: #D29DC7;
-        }
-    }
-
+    font-size: 1.8rem;
+  }
+  p {
+    font-family: $text-b;
+    font-size: 1.2rem;
+    margin: 0 0 1rem;
+  }
 }
 
-.card{
+.discount-container {
+  height: 70vh;
+  margin-top: 5em;
+  overflow: hidden;
+  background: (
+      linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+      url(../imgs/discount-banner.jpg)
+    )
+    center no-repeat fixed;
+    background-size: cover;
+
+  h2 {
+    font-size: 3.5rem;
+    font-family: $header-b;
+  }
+
+  p {
     font-family: $text-r;
-    border: none !important;
-    border-radius: 50px;
+  }
 
-    &::after{
-        position: absolute;
-        content: "";
-        top: 5px;
-        right: 5px;
-        left: 5px;
-        bottom: 245px;
-        background: transparent;
-        border: 1px solid #D29DC7;
-        z-index: 1;
+  .btn {
+    padding: 8px;
+    font-family: $text-b;
+    font-size: 1.5rem;
+    color: white;
+    width: 350px;
+    border-radius: 20px 20px 20px 20px;
+    &:hover {
+      border: 2px solid #d29dc7;
+      color: #d29dc7;
+      background-color: #fff;
     }
-
-    h5{
-        font-size: 1.5rem;
-        font-weight: bold;
-    }
-    
-    .card-body{
-        background-color: #F6F6F7;
-
-        .btn{
-            font-family: $header-b;
-            font-size: 0.9rem;
-            color: white;
-            width: 120px;
-            border-radius: 20px 20px 20px 20px;
-        }
-
-        a:hover{
-            background-color: white;
-            color: #D29DC7;
-        }
-    }
+  }
 }
 
+.site-footer {
+  margin-top: 5em;
+  background-color: #F4F1DE;
 
-.about{
-    margin-top: 10em;
-    font-family: $text-r;
+  .footer-header {
+    font-family: $header-b;
+    text-transform: capitalize;
+  }
+  .footer-menu {
+    li {
+      list-style-type: none;
+      text-transform: capitalize;
 
-    .about-img{
-        z-index: 1000;
+      a {
+        font-weight: 500;
+        text-decoration-line: none;
 
-
-        &::before{
-            position: absolute;
-            content: '';
-            top: -35px;
-            right: 140px;
-            bottom:60px;
-            left: -20px;
-            background-color: #f5caec;
-            z-index:-1;
+        &:hover {
+          color: #9e6579;
+          transition: all 1s ease;
+          text-decoration: none;
+          
         }
+      }
     }
+  }
 
+  .fab:hover {
+    transition: all 1s ease;
+    text-decoration: none;
+    color: #9e6579;
+  }
 
-    .about-body{
-        margin-top: -5em;
-
-        .about-header{
-            h2{
-                font-family: $header-b;
-            }
-        }
-
-        .btn{
-            font-family: $header-b;
-            font-size: 0.9rem;
-            color: white;
-            width: 120px;
-            border-radius: 20px 20px 20px 20px;
-        }
-
-        a:hover{
-            background-color: white;
-            color: #D29DC7;
-        }
-    }
+  .footer-bottom p{
+    font-family: $header-b;
+    text-transform: capitalize;
+    color: #d29dc7;
+  }
 }
-
-
-.team{
-    margin-top: 10em;
-    font-family: $text-r;
-
-    .team-img{
-        z-index: 1000;
-
-
-        &::before{
-            position: absolute;
-            content: '';
-            top: -35px;
-            right: 140px;
-            bottom:60px;
-            left: -20px;
-            background-color: #f5caec;
-            z-index:-1;
-        }
-    }
-
-
-    .team-body{
-        margin-top: -5em;
-
-        .team-header{
-            h2{
-                font-family: $header-b;
-            }
-        }
-
-        .btn{
-            font-family: $header-b;
-            font-size: 0.9rem;
-            color: white;
-            width: 120px;
-            border-radius: 20px 20px 20px 20px;
-        }
-
-        a:hover{
-            background-color: white;
-            color: #D29DC7;
-        }
-    }
-}
-
