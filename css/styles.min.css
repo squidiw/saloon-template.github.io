@@ -24,29 +24,29 @@
   src: url(../fonts/josefinsans/JosefinSans-Bold.ttf);
 }
 
-header {
+.home-header {
   height: 100vh;
   overflow: hidden;
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../imgs/15.jpg) center left no-repeat fixed;
 }
 
-header .header-text-container {
+.home-header .header-text-container {
   margin-top: 20vh;
   padding: 0;
 }
 
-header .header-text-container .header-text {
+.home-header .header-text-container .header-text {
   text-transform: capitalize;
   font-family: "JosefinSlab-Bold";
   color: white;
 }
 
-header .header-text-container .header-text h1 {
+.home-header .header-text-container .header-text h1 {
   font-family: "JosefinSans-Bold";
   font-size: 2.5rem;
 }
 
-header .header-text-container .header-text h1::after {
+.home-header .header-text-container .header-text h1::after {
   content: "";
   top: 18%;
   left: 45%;
@@ -56,11 +56,11 @@ header .header-text-container .header-text h1::after {
   background-color: #d29dc7;
 }
 
-header .header-text-container .header-text h2 {
+.home-header .header-text-container .header-text h2 {
   font-size: 4rem;
 }
 
-header .header-text-container .header-text .btn {
+.home-header .header-text-container .header-text .btn {
   font-family: "JosefinSans-Bold";
   font-size: 1.8rem;
   color: white;
@@ -68,7 +68,7 @@ header .header-text-container .header-text .btn {
   border-radius: 20px 20px 20px 20px;
 }
 
-header .header-text-container .header-text a:hover {
+.home-header .header-text-container .header-text a:hover {
   background-color: white;
   color: #d29dc7;
 }
@@ -112,12 +112,12 @@ header .header-text-container .header-text a:hover {
   background-color: #d29dc7;
 }
 
-.card {
+.card-style {
   border: none !important;
   border-radius: 50px;
 }
 
-.card::after {
+.card-style::after {
   position: absolute;
   content: "";
   top: 5px;
@@ -129,21 +129,21 @@ header .header-text-container .header-text a:hover {
   z-index: 1;
 }
 
-.card .card-body {
+.card-style .card-body {
   background-color: #f6f6f7;
 }
 
-.card .card-body h5 {
+.card-style .card-body h5 {
   font-family: "JosefinSlab-Regular";
   font-size: 1.5rem;
   font-weight: bold;
 }
 
-.card .card-body p .card-title {
+.card-style .card-body p .card-title {
   font-family: text-r;
 }
 
-.card .card-body .btn {
+.card-style .card-body .btn {
   font-family: "JosefinSans-Bold";
   font-size: 0.9rem;
   color: white;
@@ -151,7 +151,7 @@ header .header-text-container .header-text a:hover {
   border-radius: 20px 20px 20px 20px;
 }
 
-.card .card-body a:hover {
+.card-style .card-body a:hover {
   background-color: white;
   color: #d29dc7;
 }
@@ -401,6 +401,118 @@ header .header-text-container .header-text a:hover {
   font-family: "JosefinSlab-Bold";
   text-transform: capitalize;
   color: #d29dc7;
+}
+
+.services-wrapper {
+  background-color: #efefef;
+}
+
+.services-header {
+  height: 100vh;
+  overflow: hidden;
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../imgs/discount-banner.jpg) center left no-repeat fixed;
+  background-size: cover;
+}
+
+.services-header .nav .nav-item {
+  font-family: "JosefinSans-Bold";
+  font-size: 1rem;
+}
+
+.services-header .nav .nav-item .nav-link {
+  color: white;
+}
+
+.services-header .nav .nav-item .nav-link:hover {
+  font-weight: bold;
+}
+
+.services-header .nav .nav-item .active {
+  color: #d29dc7;
+}
+
+.services-header h1 {
+  margin-top: 25vh;
+  color: #ffffff;
+  font-family: "JosefinSlab-Bold";
+  font-size: 4.5rem;
+  text-transform: capitalize;
+}
+
+.services-header h1 .white {
+  color: #d29dc7;
+}
+
+.services-header .btn-primary {
+  font-family: "JosefinSans-Bold";
+  font-size: 1.8rem;
+  color: white;
+  width: 300px;
+  border-radius: 30px 30px 30px 30px;
+}
+
+.services-header .btn-primary:hover {
+  background-color: white;
+  color: #d29dc7;
+}
+
+.services-container {
+  background-color: #efefef;
+}
+
+.services-container .section-title h2 {
+  font-family: "JosefinSlab-Bold";
+  font-size: 3.5rem;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+  text-transform: capitalize;
+}
+
+.services-container .card-1 {
+  color: #fff;
+  background-color: red;
+}
+
+.services-container .card-2 {
+  color: #fff;
+  background-color: #eb9d00;
+}
+
+.services-container .card-3 {
+  color: #fff;
+  background-color: #044d2b;
+}
+
+.services-container .services-card {
+  font-family: "JosefinSans-Bold";
+  text-align: center;
+  border-radius: 0 0 25px 25px;
+  box-shadow: -1px -2px 27px -6px rgba(0, 0, 0, 0.75);
+  transition: 1s ease-out;
+}
+
+.services-container .services-card:hover .card-btn {
+  color: #d29dc7;
+  background-color: white;
+  border: 2px solid #d29dc7;
+}
+
+.services-container .services-card .card-title {
+  font-family: "JosefinSlab-Bold";
+  color: #d29dc7;
+  font-size: 2.4rem;
+  text-transform: capitalize;
+  text-align: center;
+}
+
+.services-container .card-btn {
+  font-family: "JosefinSans-Bold";
+  font-size: 1.2rem;
+  color: white;
+  background-color: #d29dc7;
+  width: 200px;
+  border-radius: 20px 20px 20px 20px;
+  border: 2px solid #d29dc7;
 }
 
 /*!
