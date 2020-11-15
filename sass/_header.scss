@@ -154,7 +154,9 @@
   .about-body {
     margin-top: -5em;
 
-    .about-header {
+    .home-about-header {
+      background-color: white;
+      z-index:1000;
       h2 {
         font-family: $header-b;
       }
@@ -348,8 +350,7 @@
 
 .site-footer {
   margin-top: 5em;
-  background-color: #F4F1DE;
-
+  
   .footer-header {
     font-family: $header-b;
     text-transform: capitalize;

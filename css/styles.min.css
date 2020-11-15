@@ -180,7 +180,12 @@
   margin-top: -5em;
 }
 
-.about .about-body .about-header h2 {
+.about .about-body .home-about-header {
+  background-color: white;
+  z-index: 1000;
+}
+
+.about .about-body .home-about-header h2 {
   font-family: "JosefinSlab-Bold";
 }
 
@@ -367,7 +372,6 @@
 
 .site-footer {
   margin-top: 5em;
-  background-color: #F4F1DE;
 }
 
 .site-footer .footer-header {
@@ -404,7 +408,7 @@
 }
 
 .services-wrapper {
-  background-color: #efefef;
+  background-color: #fff;
 }
 
 .services-header {
@@ -439,7 +443,7 @@
   text-transform: capitalize;
 }
 
-.services-header h1 .white {
+.services-header h1 .pink {
   color: #d29dc7;
 }
 
@@ -457,7 +461,7 @@
 }
 
 .services-container {
-  background-color: #efefef;
+  background-color: #fff;
 }
 
 .services-container .section-title h2 {
@@ -488,13 +492,19 @@
   text-align: center;
   border-radius: 0 0 25px 25px;
   box-shadow: -1px -2px 27px -6px rgba(0, 0, 0, 0.75);
-  transition: 1s ease-out;
+  transition: 2s ease;
+  overflow: hidden;
 }
 
 .services-container .services-card:hover .card-btn {
-  color: #d29dc7;
-  background-color: white;
+  color: white;
+  background-color: #d29dc7;
   border: 2px solid #d29dc7;
+}
+
+.services-container .services-card:hover img {
+  transform: scale(1.1);
+  transition: transform 2s cubic-bezier(0.25, 0.45, 0.45, 0.95);
 }
 
 .services-container .services-card .card-title {
@@ -508,11 +518,162 @@
 .services-container .card-btn {
   font-family: "JosefinSans-Bold";
   font-size: 1.2rem;
-  color: white;
-  background-color: #d29dc7;
+  color: #d29dc7;
+  background-color: white;
   width: 200px;
   border-radius: 20px 20px 20px 20px;
   border: 2px solid #d29dc7;
+  transition: .5s ease-in-out;
+}
+
+.about-header {
+  height: 100vh;
+  overflow: hidden;
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../imgs/discount-banner.jpg) center left no-repeat fixed;
+  background-size: cover;
+}
+
+.about-header .nav .nav-item {
+  font-family: "JosefinSans-Bold";
+  font-size: 1rem;
+}
+
+.about-header .nav .nav-item .nav-link {
+  color: white;
+}
+
+.about-header .nav .nav-item .nav-link:hover {
+  font-weight: bold;
+}
+
+.about-header .nav .nav-item .active {
+  color: #d29dc7;
+}
+
+.about-header h1 {
+  margin-top: 25vh;
+  color: #ffffff;
+  font-family: "JosefinSlab-Bold";
+  font-size: 4.5rem;
+  text-transform: capitalize;
+}
+
+.about-header h1 .pink {
+  color: #d29dc7;
+}
+
+.about-header .btn-primary {
+  font-family: "JosefinSans-Bold";
+  font-size: 1.8rem;
+  color: white;
+  width: 300px;
+  border-radius: 30px 30px 30px 30px;
+}
+
+.about-header .btn-primary:hover {
+  background-color: white;
+  color: #d29dc7;
+}
+
+.heading {
+  font-family: "JosefinSlab-Bold";
+  text-transform: capitalize;
+  color: #d29dc7;
+  font-size: 3rem;
+}
+
+.staff p {
+  font-family: "JosefinSans-Bold";
+  font-size: 1.1rem;
+}
+
+.contact-wrapper {
+  background-color: #fff;
+}
+
+.services-header {
+  height: 100vh;
+  overflow: hidden;
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../imgs/discount-banner.jpg) center left no-repeat fixed;
+  background-size: cover;
+}
+
+.services-header .nav .nav-item {
+  font-family: "JosefinSans-Bold";
+  font-size: 1rem;
+}
+
+.services-header .nav .nav-item .nav-link {
+  color: white;
+}
+
+.services-header .nav .nav-item .nav-link:hover {
+  font-weight: bold;
+}
+
+.services-header .nav .nav-item .active {
+  color: #d29dc7;
+}
+
+.services-header h1 {
+  margin-top: 25vh;
+  color: #ffffff;
+  font-family: "JosefinSlab-Bold";
+  font-size: 4.5rem;
+  text-transform: capitalize;
+}
+
+.services-header h1 .pink {
+  color: #d29dc7;
+}
+
+.services-header .btn-primary {
+  font-family: "JosefinSans-Bold";
+  font-size: 1.8rem;
+  color: white;
+  width: 300px;
+  border-radius: 30px 30px 30px 30px;
+}
+
+.services-header .btn-primary:hover {
+  background-color: white;
+  color: #d29dc7;
+}
+
+.contact-form {
+  font-family: "JosefinSans-Regular";
+  font-weight: 600;
+}
+
+.contact-heading {
+  font-family: "JosefinSlab-Bold";
+  font-size: 2.2rem;
+}
+
+form {
+  border-radius: 40px 40px 40px 40px;
+}
+
+form .form-group .btn {
+  color: white;
+  border-radius: 20px;
+  border: 2px solid #d29dc7;
+}
+
+form .form-group .btn:hover {
+  color: #d29dc7;
+  background-color: #ffffff;
+}
+
+.sidebar .btn {
+  color: white;
+  border-radius: 20px;
+  border: 2px solid #d29dc7;
+}
+
+.sidebar .btn:hover {
+  color: #d29dc7;
+  background-color: #ffffff;
 }
 
 /*!
