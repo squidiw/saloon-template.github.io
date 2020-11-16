@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/styles.min.css">
     <link rel="stylesheet" href="./css/animation/animate.min.css">
+    <link rel="stylesheet" href="./css/animation/aos.css">
     <link
       rel="stylesheet"
       href="./fonts/fontawesome-free-5.13.0-web/css/fontawesome.min.css"
@@ -57,7 +58,7 @@
        </div>
        
         <div class="d-flex flex-wrap justify-content-around">
-          <div class="card services-card" style="width: 20rem;">
+          <div class="card services-card" style="width: 20rem;" data-aos="fade" data-aos-delay="300" data-aos-duration="900">
            <img src="./imgs/facial.jpg" class="card-img-top img-fluid" alt="...">
            <div class="card-body">
              <h5 class="card-title">facial</h5>
@@ -72,7 +73,7 @@
            </div>
          </div>
        
-         <div class="card services-card" style="width: 20rem;">
+         <div class="card services-card" style="width: 20rem;" data-aos="fade" data-aos-delay="400" data-aos-duration="900">
            <img src="imgs/facial.jpg" class="card-img-top img-fluid" alt="...">
            <div class="card-body">
              <h5 class="card-title">mani & pedi</h5>
@@ -87,7 +88,7 @@
            </div>
          </div>
        
-         <div class="card services-card" style="width: 20rem;">
+         <div class="card services-card" style="width: 20rem;" data-aos="fade" data-aos-delay="500" data-aos-easing="linear" data-aos-duration="900" >
            <img src="imgs/facial.jpg" class="card-img-top img-fluid" alt="...">
            <div class="card-body">
              <h5 class="card-title">spa</h5>
@@ -179,7 +180,10 @@
 </section>
 
 
-
+  <script src="./js/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
 
    
    <script src="./js/typeit.min.js"></script>

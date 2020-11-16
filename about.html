@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/styles.min.css" />
     <link rel="stylesheet" href="./css/animation/animate.min.css" />
+    <link rel="stylesheet" href="/css/animation/aos.css">
     <link
       rel="stylesheet"
       href="./fonts/fontawesome-free-5.13.0-web/css/fontawesome.min.css"
@@ -63,19 +64,19 @@
           <img src="./imgs/facial.jpg" alt="Image" class="img-fluid rounded">
         </div>
         <div class="col-md-5 mt-5 ml-auto">
-          <h2 class="mb-3 heading">our history</h2>
+          <h2 class="mb-3 heading" data-aos="fade" data-aos-delay="500">our history</h2>
           <p class="lead">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Excepturi facilis tempora modi iusto similique at voluptas repellat, beatae nihil reiciendis.</p>
           <p class="mb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit exercitationem aut obcaecati, consectetur deserunt voluptatum non maxime. Sunt, nisi vitae.</p>
           <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rem earum consequuntur corporis, fuga soluta facere?</p>
           <p class="mb-4">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Expedita minus maxime pariatur, blanditiis facere eligendi?</p>
           <div class="d-flex flex-column">
-            <p> <span style="font-size: 1.5em; color: #d29dc7">
+            <p data-aos="fade" data-aos-delay="500"> <span style="font-size: 1.5em; color: #d29dc7">
               <i class="fa fa-check-circle"></i>
             </span> Lorem ipsum dolor sit.</p>
-            <p> <span style="font-size: 1.5em; color: #d29dc7">
+            <p data-aos="fade" data-aos-delay="700"> <span style="font-size: 1.5em; color: #d29dc7">
               <i class="fa fa-check-circle"></i>
             </span> Lorem ipsum dolor sit.</p>
-            <p> <span style="font-size: 1.5em; color: #d29dc7">
+            <p data-aos="fade" data-aos-delay="900"> <span style="font-size: 1.5em; color: #d29dc7">
               <i class="fa fa-check-circle"></i>
             </span> Lorem ipsum dolor sit.</p>
           </div>
@@ -92,25 +93,25 @@
       </div>
       <div class="row">
         <div class="col-md-6 col-lg-6 mb-4 mb-lg-5 text-center">
-        <img src="./imgs/person1.jpg" alt="" class="img-fluid mb-3 w-50 rounded-circle">
+        <img src="./imgs/person1.jpg" alt="" class="img-fluid mb-3 w-50 rounded-circle" data-aos="fade" data-aos-delay="900">
         <h3>Amaris Gonzales</h3>
         <p class="caption">therapist</p>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A tenetur eligendi harum aliquam quos accusantium adipisci neque facilis aperiam eveniet!</p>
         </div>
         <div class="col-md-6 col-lg-6 mb-4 mb-lg-5 text-center">
-          <img src="./imgs/person2.jpg" alt="" class="img-fluid mb-3 w-50 rounded-circle">
+          <img src="./imgs/person2.jpg" alt="" class="img-fluid mb-3 w-50 rounded-circle" data-aos="fade" data-aos-delay="500">
         <h3>Amaris Gonzales</h3>
         <p class="caption">therapist</p>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A tenetur eligendi harum aliquam quos accusantium adipisci neque facilis aperiam eveniet!</p>
         </div>
         <div class="col-md-6 col-lg-6 mb-4 mb-lg-5 text-center">
-          <img src="./imgs/person2.jpg" alt="" class="img-fluid mb-3 w-50 rounded-circle">
+          <img src="./imgs/person2.jpg" alt="" class="img-fluid mb-3 w-50 rounded-circle" data-aos="fade" data-aos-delay="800">
         <h3>Amaris Gonzales</h3>
         <p class="caption">therapist</p>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A tenetur eligendi harum aliquam quos accusantium adipisci neque facilis aperiam eveniet!</p>
         </div>
         <div class="col-md-6 col-lg-6 mb-4 mb-lg-5 text-center">
-          <img src="./imgs/person1.jpg" alt="" class="img-fluid mb-3 w-50 rounded-circle">
+          <img src="./imgs/person1.jpg" alt="" class="img-fluid mb-3 w-50 rounded-circle" data-aos="fade" data-aos-delay="600">
         <h3>Amaris Gonzales</h3>
         <p class="caption">therapist</p>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A tenetur eligendi harum aliquam quos accusantium adipisci neque facilis aperiam eveniet!</p>
@@ -225,6 +226,11 @@
     new WOW().init()
   </script>
   
+  <script src="./js/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+
 
   </body>
 </html>

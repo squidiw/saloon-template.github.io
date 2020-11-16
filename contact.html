@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/styles.min.css">
     <link rel="stylesheet" href="./css/animation/animate.min.css">
+    <link rel="stylesheet" href="/css/animation/aos.css">
     <link
       rel="stylesheet"
       href="./fonts/fontawesome-free-5.13.0-web/css/fontawesome.min.css"
@@ -48,7 +49,7 @@
         </header>
     </section>
     
-    <div class="contact-form bg-light">
+    <div class="contact-form bg-light" data-aos="fade-in" data-aos-delay="500" data-aos-ease="ease-in" data-aos-duration="2000">
         <div class="container">
             <div class="row">
                 <div class="col-md-7 mb-5">
@@ -69,6 +70,23 @@
                                 <label for="email">Email</label>
                                 <input type="email" id="lname" class="form-control">
                             </div>
+                        </div>
+
+                        <div class="row form-group">
+                          <div class="col-md-12">
+                            <div class="input-group mb-3 w-50 mt-3">
+                              <div class="input-group-prepend">
+                                <label class="input-group-text" for="inputGroupSelect01">Services</label>
+                              </div>
+                              <select class="custom-select" id="inputGroupSelect01">
+                                <option selected>Choose...</option>
+                                <option value="1">Facials</option>
+                                <option value="2">Mani & Pedi</option>
+                                <option value="3">Spa</option>
+                              </select>
+                            </div>
+                            
+                          </div>
                         </div>
 
                         <div class="row form-group">
@@ -221,5 +239,11 @@
   <script>
     new WOW().init()
   </script>   
+
+<script src="./js/aos.js"></script>
+<script>
+  AOS.init();
+</script>
+
 </body>
 </html>
