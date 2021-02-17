@@ -55,73 +55,60 @@
          }
       }
    }
+}
 
-   .services-container {
-      background-color: #fff;
-      .section-title h2 {
-         font-family: $header-b;
-         font-size: 3.5rem;
-         margin-top: 3rem;
-         margin-bottom: 3rem;
-         text-transform: capitalize;
-      }
+.services-container {
+   background-color: #fff;
 
-      .card-1 {
-         color: #fff;
-         background-color: red;
-      }
+   h2 {
+      font-family: $header-b;
+      font-size: 3.5rem;
+      margin-top: 3rem;
+      margin-bottom: 3rem;
+      text-transform: capitalize;
+   }
 
-      .card-2 {
-         color: #fff;
-         background-color: #eb9d00;
-      }
+   .services-card {
+      font-family: $text-b;
+      text-align: center;
+      border-radius: 0 0 25px 25px;
+      -webkit-box-shadow: -1px -2px 27px -6px rgba(0, 0, 0, 0.75);
+      -moz-box-shadow: -1px -2px 27px -6px rgba(0, 0, 0, 0.75);
+      box-shadow: -1px -2px 27px -6px rgba(0, 0, 0, 0.75);
+      transition: 2s ease;
+      overflow: hidden;
 
-      .card-3 {
-         color: #fff;
-         background-color: #044d2b;
-      }
-
-      .services-card {
-         font-family: $text-b;
-         text-align: center;
-         border-radius: 0 0 25px 25px;
-         -webkit-box-shadow: -1px -2px 27px -6px rgba(0, 0, 0, 0.75);
-         -moz-box-shadow: -1px -2px 27px -6px rgba(0, 0, 0, 0.75);
-         box-shadow: -1px -2px 27px -6px rgba(0, 0, 0, 0.75);
-         transition: 2s ease;
-         overflow: hidden;
-
-         &:hover {
-            .card-btn {
-               color: white;
-               background-color: #d29dc7;
-               border: 2px solid #d29dc7;
-            }
-
-            img {
-               transform: scale(1.1);
-               transition: transform 2s cubic-bezier(0.25, 0.45, 0.45, 0.95);
-            }
+      &:hover {
+         .card-btn {
+            color: white;
+            background-color: #d29dc7;
+            border: 2px solid #d29dc7;
          }
-
-         .card-title {
-            font-family: $header-b;
-            color: #d29dc7;
-            font-size: 2.4rem;
-            text-transform: capitalize;
-            text-align: center;
+         img {
+            transform: scale(1.1);
+            transition: transform 2s cubic-bezier(0.25, 0.45, 0.45, 0.95);
          }
       }
 
-      .card-btn {
-         font-family: $text-b;
-         font-size: 1.2rem;
-         color: #d29dc7;
-         background-color: white;
-         width: 200px;
-         border-radius: 20px 20px 20px 20px;
-         border: 2px solid #d29dc7;
-         transition: 0.5s ease-in-out;
-      }
+   }
+
+   .card-title {
+      font-family: $header-b;
+      color: #d29dc7;
+      font-size: 2.4rem;
+      text-transform: capitalize;
+      text-align: center;
+   }
+
+   .card-btn {
+      font-family: $text-b;
+      font-size: 1.2rem;
+      color: #d29dc7;
+      background-color: white;
+      width: 200px;
+      border-radius: 20px 20px 20px 20px;
+      border: 2px solid #d29dc7;
+      transition: 0.5s ease-in-out;
    }
 }
+

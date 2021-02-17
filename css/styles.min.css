@@ -198,7 +198,7 @@
 }
 
 .card-style .card-body p .card-title {
-  font-family: text-r;
+  font-family: "JosefinSans-Regular";
 }
 
 .card-style .card-body .btn {
@@ -607,11 +607,11 @@
   color: #d29dc7;
 }
 
-.services-header .services-container {
+.services-container {
   background-color: #fff;
 }
 
-.services-header .services-container .section-title h2 {
+.services-container h2 {
   font-family: "JosefinSlab-Bold";
   font-size: 3.5rem;
   margin-top: 3rem;
@@ -619,22 +619,7 @@
   text-transform: capitalize;
 }
 
-.services-header .services-container .card-1 {
-  color: #fff;
-  background-color: red;
-}
-
-.services-header .services-container .card-2 {
-  color: #fff;
-  background-color: #eb9d00;
-}
-
-.services-header .services-container .card-3 {
-  color: #fff;
-  background-color: #044d2b;
-}
-
-.services-header .services-container .services-card {
+.services-container .services-card {
   font-family: "JosefinSans-Bold";
   text-align: center;
   border-radius: 0 0 25px 25px;
@@ -643,18 +628,18 @@
   overflow: hidden;
 }
 
-.services-header .services-container .services-card:hover .card-btn {
+.services-container .services-card:hover .card-btn {
   color: white;
   background-color: #d29dc7;
   border: 2px solid #d29dc7;
 }
 
-.services-header .services-container .services-card:hover img {
+.services-container .services-card:hover img {
   transform: scale(1.1);
   transition: transform 2s cubic-bezier(0.25, 0.45, 0.45, 0.95);
 }
 
-.services-header .services-container .services-card .card-title {
+.services-container .card-title {
   font-family: "JosefinSlab-Bold";
   color: #d29dc7;
   font-size: 2.4rem;
@@ -662,7 +647,7 @@
   text-align: center;
 }
 
-.services-header .services-container .card-btn {
+.services-container .card-btn {
   font-family: "JosefinSans-Bold";
   font-size: 1.2rem;
   color: #d29dc7;
