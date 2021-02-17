@@ -27,7 +27,7 @@
 .home-header {
   height: 100vh;
   overflow: hidden;
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../imgs/15.jpg) center left no-repeat fixed;
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../imgs/15.jpg) center left no-repeat fixed;
 }
 
 .home-header .header-text-container {
@@ -44,14 +44,15 @@
 .home-header .header-text-container .header-text h1 {
   font-family: "JosefinSans-Bold";
   font-size: 2.5rem;
+  position: relative;
 }
 
 .home-header .header-text-container .header-text h1::after {
   content: "";
-  top: 18%;
-  left: 45%;
   position: absolute;
-  width: 65px;
+  top: 1.2em;
+  left: 1.2em;
+  width: 50px;
   height: 2px;
   background-color: #d29dc7;
 }
@@ -84,12 +85,15 @@
     justify-content: center;
     align-items: center;
   }
+  .home-header .header-text-container .header-text h1 {
+    position: relative;
+  }
   .home-header .header-text-container .header-text h1::after {
     content: "";
-    top: 16%;
-    left: 33%;
+    top: 1.2em;
+    left: 1.2em;
     position: absolute;
-    width: 65px;
+    width: 50px;
     height: 2px;
     background-color: #d29dc7;
   }
@@ -103,7 +107,7 @@
   background-color: white;
   z-index: 1000;
   border-radius: 10px;
-  box-shadow: 0 15px 30px 0 rgba(0, 0, 0, 0.05);
+  box-shadow: 0 15px 30px 0 rgba(0, 0, 0, 0.1);
 }
 
 .quick-info-container .block-quick-info {
@@ -121,8 +125,14 @@
 }
 
 @media only screen and (max-width: 576px) {
+  .quick-info-container {
+    width: 85vw !important;
+    box-shadow: 0 15px 30px 0 rgba(0, 0, 0, 0.3);
+  }
   .quick-info-container .block-quick-info .quick-info {
-    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 }
 
@@ -132,24 +142,28 @@
 
 .services-top-text p {
   font-family: "JosefinSans-Regular";
+  position: relative;
 }
 
 .services-top-text p::after {
   position: absolute;
   content: "";
-  top: 125%;
-  left: 48%;
+  top: 1.5em;
+  left: 33.5em;
   width: 50px;
   height: 2px;
   background-color: #d29dc7;
 }
 
 @media only screen and (max-width: 576px) {
+  .services-top-text p {
+    position: relative;
+  }
   .services-top-text p::after {
     position: absolute;
     content: "";
-    top: 173%;
-    left: 45%;
+    top: 1.5em;
+    left: 12.5em;
     width: 50px;
     height: 2px;
     background-color: #d29dc7;
@@ -200,12 +214,6 @@
   color: #d29dc7;
 }
 
-@media only screen and (max-width: 576px) {
-  .card-3 {
-    margin-left: -50px;
-  }
-}
-
 .about {
   height: 100vh;
   margin-top: 5em;
@@ -213,6 +221,7 @@
 
 .about .about-img {
   z-index: 1000;
+  position: relative;
 }
 
 .about .about-img::before {
@@ -221,7 +230,7 @@
   top: -35px;
   right: 140px;
   bottom: 60px;
-  left: -20px;
+  left: -50px;
   background-color: #f5caec;
   z-index: -1;
 }
@@ -275,19 +284,19 @@
   font-family: "JosefinSlab-Bold";
   text-transform: capitalize;
   text-align: center;
-  position: relative;
 }
 
 .gallery-header h3 {
   margin-bottom: 1em;
+  position: relative;
 }
 
 .gallery-header h3::after {
   position: absolute;
   content: "";
-  top: 322%;
-  left: 48%;
-  width: 70px;
+  top: 1.5em;
+  left: 23.5em;
+  width: 50px;
   height: 2px;
   background-color: #d29dc7;
 }
@@ -338,13 +347,14 @@
 @media only screen and (max-width: 576px) {
   .gallery-header h3 {
     margin-top: 9em;
+    position: relative;
   }
   .gallery-header h3::after {
     position: absolute;
     content: "";
-    top: -30%;
-    left: 45%;
-    width: 70px;
+    top: 1.5em;
+    left: 8em;
+    width: 50px;
     height: 2px;
     background-color: #d29dc7;
   }
@@ -377,6 +387,7 @@
 
 .team .team-img {
   z-index: 1000;
+  position: relative;
 }
 
 .team .team-img::before {
