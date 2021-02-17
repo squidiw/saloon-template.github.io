@@ -47,7 +47,7 @@
         color: #d29dc7;
       }
     }
-  }
+}
 
   .heading{
     font-family: $header-b;
@@ -63,3 +63,13 @@
       font-size: 1.1rem;
     }
   }
+
+  @media only screen and (max-width:576px){
+    .quick-info-container{
+      .block-quick-info{
+        .quick-info{
+          justify-content: center;
+        }
+      }
+    }
+   }

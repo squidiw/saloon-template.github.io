@@ -73,9 +73,9 @@
   color: #d29dc7;
 }
 
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 576px) {
   .home-header {
-    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../imgs/15.jpg);
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../imgs/15.jpg);
     background-position: 50% 50%;
   }
   .home-header .header-text-container {
@@ -120,6 +120,12 @@
   font-family: "JosefinSans-Regular";
 }
 
+@media only screen and (max-width: 576px) {
+  .quick-info-container .block-quick-info .quick-info {
+    justify-content: center;
+  }
+}
+
 .services-top-text {
   font-family: "JosefinSlab-Bold";
 }
@@ -138,7 +144,7 @@
   background-color: #d29dc7;
 }
 
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 576px) {
   .services-top-text p::after {
     position: absolute;
     content: "";
@@ -194,7 +200,7 @@
   color: #d29dc7;
 }
 
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 576px) {
   .card-3 {
     margin-left: -50px;
   }
@@ -250,7 +256,10 @@
   color: #d29dc7;
 }
 
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 576px) {
+  .about {
+    margin-bottom: 5em;
+  }
   .about .about-body {
     margin-top: 3em;
   }
@@ -266,6 +275,7 @@
   font-family: "JosefinSlab-Bold";
   text-transform: capitalize;
   text-align: center;
+  position: relative;
 }
 
 .gallery-header h3 {
@@ -325,6 +335,40 @@
   object-fit: cover;
 }
 
+@media only screen and (max-width: 576px) {
+  .gallery-header h3 {
+    margin-top: 9em;
+  }
+  .gallery-header h3::after {
+    position: absolute;
+    content: "";
+    top: -30%;
+    left: 45%;
+    width: 70px;
+    height: 2px;
+    background-color: #d29dc7;
+  }
+  .gallery-container {
+    margin-top: 3em;
+  }
+  .gallery-container .gallery {
+    grid-template-columns: 80vw;
+    grid-template-rows: auto;
+  }
+  .gallery-container .gallery__text {
+    height: 25vh;
+  }
+  .gallery-container .gallery__text-1 {
+    grid-row: 1;
+  }
+  .gallery-container .gallery__text-2 {
+    grid-row: 4;
+  }
+  .gallery-container .gallery__text-3 {
+    grid-row: 7;
+  }
+}
+
 .team {
   height: 100vh;
   margin-top: 10em;
@@ -356,6 +400,12 @@
 
 .team .team-body .team-text {
   padding: 5px;
+}
+
+@media only screen and (max-width: 576px) {
+  .team-text {
+    margin-bottom: 2em;
+  }
 }
 
 .testimonial__header {
@@ -394,6 +444,12 @@
   margin: 0 0 1rem;
 }
 
+@media only screen and (max-width: 576px) {
+  .testimony-container {
+    margin-top: 4em;
+  }
+}
+
 .discount-container {
   height: 70vh;
   margin-top: 5em;
@@ -421,9 +477,22 @@
 }
 
 .discount-container .btn:hover {
-  border: 2px solid #d29dc7;
+  border: 1px solid #d29dc7;
   color: #d29dc7;
   background-color: #fff;
+}
+
+@media only screen and (max-width: 576px) {
+  .discount-container h2 {
+    font-size: 2.5rem;
+  }
+  .discount-container p {
+    font-size: 1rem;
+  }
+  .discount-container .btn {
+    width: 400px;
+    font-size: 1rem;
+  }
 }
 
 .site-footer {
@@ -463,6 +532,12 @@
   color: #d29dc7;
 }
 
+@media only screen and (max-width: 576px) {
+  .site-footer {
+    text-align: center;
+  }
+}
+
 .services-wrapper {
   background-color: #fff;
 }
@@ -474,24 +549,29 @@
   background-size: cover;
 }
 
-.services-header .nav .nav-item {
+.services-header .navbar .nav-item {
   font-family: "JosefinSans-Bold";
-  font-size: 1rem;
+  font-size: 1.15rem;
 }
 
-.services-header .nav .nav-item .nav-link {
+.services-header .navbar .nav-item .nav-link {
   color: white;
 }
 
-.services-header .nav .nav-item .nav-link:hover {
+.services-header .navbar .nav-item .nav-link:hover {
   font-weight: bold;
 }
 
-.services-header .nav .nav-item .active {
+.services-header .navbar .nav-item .active {
   color: #d29dc7;
 }
 
-.services-header h1 {
+.services-header .navbar #navbarSupportedContent {
+  color: blue;
+  background-image: none;
+}
+
+.services-header .navbar h1 {
   margin-top: 25vh;
   color: #ffffff;
   font-family: "JosefinSlab-Bold";
@@ -499,11 +579,11 @@
   text-transform: capitalize;
 }
 
-.services-header h1 .pink {
+.services-header .navbar h1 .pink {
   color: #d29dc7;
 }
 
-.services-header .btn-primary {
+.services-header .navbar .btn-primary {
   font-family: "JosefinSans-Bold";
   font-size: 1.8rem;
   color: white;
@@ -511,16 +591,16 @@
   border-radius: 30px 30px 30px 30px;
 }
 
-.services-header .btn-primary:hover {
+.services-header .navbar .btn-primary:hover {
   background-color: white;
   color: #d29dc7;
 }
 
-.services-container {
+.services-header .services-container {
   background-color: #fff;
 }
 
-.services-container .section-title h2 {
+.services-header .services-container .section-title h2 {
   font-family: "JosefinSlab-Bold";
   font-size: 3.5rem;
   margin-top: 3rem;
@@ -528,22 +608,22 @@
   text-transform: capitalize;
 }
 
-.services-container .card-1 {
+.services-header .services-container .card-1 {
   color: #fff;
   background-color: red;
 }
 
-.services-container .card-2 {
+.services-header .services-container .card-2 {
   color: #fff;
   background-color: #eb9d00;
 }
 
-.services-container .card-3 {
+.services-header .services-container .card-3 {
   color: #fff;
   background-color: #044d2b;
 }
 
-.services-container .services-card {
+.services-header .services-container .services-card {
   font-family: "JosefinSans-Bold";
   text-align: center;
   border-radius: 0 0 25px 25px;
@@ -552,18 +632,18 @@
   overflow: hidden;
 }
 
-.services-container .services-card:hover .card-btn {
+.services-header .services-container .services-card:hover .card-btn {
   color: white;
   background-color: #d29dc7;
   border: 2px solid #d29dc7;
 }
 
-.services-container .services-card:hover img {
+.services-header .services-container .services-card:hover img {
   transform: scale(1.1);
   transition: transform 2s cubic-bezier(0.25, 0.45, 0.45, 0.95);
 }
 
-.services-container .services-card .card-title {
+.services-header .services-container .services-card .card-title {
   font-family: "JosefinSlab-Bold";
   color: #d29dc7;
   font-size: 2.4rem;
@@ -571,7 +651,7 @@
   text-align: center;
 }
 
-.services-container .card-btn {
+.services-header .services-container .card-btn {
   font-family: "JosefinSans-Bold";
   font-size: 1.2rem;
   color: #d29dc7;
@@ -579,7 +659,7 @@
   width: 200px;
   border-radius: 20px 20px 20px 20px;
   border: 2px solid #d29dc7;
-  transition: .5s ease-in-out;
+  transition: 0.5s ease-in-out;
 }
 
 .about-header {
@@ -641,6 +721,12 @@
 .staff p {
   font-family: "JosefinSans-Bold";
   font-size: 1.1rem;
+}
+
+@media only screen and (max-width: 576px) {
+  .quick-info-container .block-quick-info .quick-info {
+    justify-content: center;
+  }
 }
 
 .contact-wrapper {
